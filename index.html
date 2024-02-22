@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULKIT - Developer Portfolio</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="brand-title">Pulkit's Portfolio</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="../Pulkit_Resume_written.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="introduction">
+            <div class="leftSection">Hi, My name is <span class="purple">Pulkit</span>
+                <div>and I am a
+                    <span id="element"></span>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="../images/dev.gif" alt="image">
+            </div>
+        </section>
+
+        <a href="../Pulkit_Resume_written.pdf" target="_blank"><button class="download-cv">Download CV</button></a>
+
+        <hr>
+
+        <section class="education" id="education">
+
+            <h1>Education</h1>
+
+            <div class="post-graduation">
+                <div class="university">
+                    Panjab University
+                </div>
+                <div class="marks">
+                    75%
+                </div>
+            </div>
+            <div class="graduation">
+                <div class="university">I.K. Gujral Punjab Technical University</div>
+                <div class="marks">8.5 CGPA</div>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="skills" id="skills">
+            <h1>Skills</h1>
+
+            <div class="wrapper">
+                <div class="content">
+                    <img src="../images/html.png"></img>
+                    <h2>HTML</h2>
+                </div>
+
+                <div class="content">
+                    <img src="../images/css.png"></img>
+                    <h2>CSS</h2>
+                </div>
+
+                <div class="content">
+                    <img src="../images/js.png"></img>
+                    <h2>Javascript</h2>
+                </div>
+
+                <div class="content">
+                    <img src="../images/react.png"></img>
+                    <h2>React JS</h2>
+                </div>
+
+                <div class="content">
+                    <img src="../images/node.png"></img>
+                    <h2>Node JS</h2>
+                </div>
+
+                <div class="content">
+                    <img src="../images/c++.png"></img>
+                    <h2>C++</h2>
+                </div>
+
+                <div class="content">
+                    <img src="../images/mysql.png"></img>
+                    <h2>MySQL</h2>
+                </div>
+
+                <div class="content">
+                    <img src="../images/java.png"></img>
+                    <h2>Java</h2>
+                </div>
+
+                <div class="content">
+                    <img src="../images/mongo.png"></img>
+                    <h2>Mongo DB</h2>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="projects" id="projects">
+            <h1>Projects</h1> 
+            <div class="container">
+                <div class="project blog-blaze">Blog Blaze</div>
+                <div class="project quote-generator">Random Quote Generator</div>
+                <div class="project tic-tac-toe">Tic-Tac-Toe</div>
+                <div class="project stack-13">Stack 13</div>
+                <div class="project dijkstra-algorithm-visualizer">Dijkstra Algorithm Visulaizer</div>
+                <div class="project stack-13">Chelsea Website</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="contact" id="contact">
+            <h1>Contact</h1>
+            <div class="container">
+                <div class="contact-box email">
+                    <a href="mailto:pulkitorg49@gmail.com">
+                        <i class="logo fa fa-envelope"></i>
+                    </a>
+                    <div class="text">Email</div>
+                </div>
+
+                <div class="contact-box linkedin">
+                    <a href="https://www.linkedin.com/in/pulkitkumar49/" target="_blank">
+                        <i class="logo fa fa-linkedin-square"></i>
+                    </a>
+                    <div class="text">Linkedin</div>
+                </div>
+
+                <div class="contact-box twitter">
+                    <a href="https://twitter.com/PulkitKumar49" target="_blank">
+                        <i class="logo fa fa-twitter"></i>
+                    </a>
+                    <div class="text">X</div>
+                </div>
+
+                <div class="contact-box github">
+                    <a href="https://github.com/pulkitsappal" target="_blank">
+                        <i class="logo fa fa-github"></i>
+                    </a>
+                    <div class="text">Github</div>
+                </div>
+
+            </div>
+
+            <h2>Custom Query :</h2>
+            <div class="custom-query">
+                <form target="_blank" action="https://formsubmit.co/pulkitsupple2001@gmail.com" method="POST"
+                    onsubmit="sendEmail">
+                    <div>
+                        <label for="sender-name">Your Name:</label>
+                        <input type="text" name="sender-name" id="sender-name" placeholder="Your Name...">
+                    </div>
+                    <div>
+                        <label for="sender-email">Your Email:</label>
+                        <input type="email" name="sender-email" id="sender-email" placeholder="Your Email...">
+                    </div>
+                    <div>
+                        <label for="sender-message">Your Message:</label>
+                        <textarea rows="10" cols="40" name="sender-message" id="sender-message"
+                            placeholder="Your Message..."></textarea>
+                    </div>
+                    <input type="submit" id="submit" value="SUBMIT">
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <span>This 100% custom website is open source. You can find the <a href="#">code</a> on GitHub</span>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
+
+    <!-- Setup and start animation! -->
+ <script>
+    var typed = new Typed('#element', {
+      strings: ['Full Stack Web Developer', 'Software Developer', 'Competitive Programmer', 'Magician'],
+      typeSpeed: 50,
+    });
+  </script> 
+</body>
+
+</script>
+<script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })
+
+</script>
+
+</html>
