@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULKIT - Developer Portfolio</title>
+    
+    <!-- CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*global classes, utility classes, site classes*/
+
+/*Header section*/
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(9, 9, 78);
+    color: white;
+    padding: 1rem 0;
+}
+
+.brand-title {
+    font-size: 2rem;
+    margin: 0 0 0 2rem;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0 5rem 0 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.navbar-links li a:hover {
+    background-color: rgb(0, 0, 33);
+    font-size: 1.102rem;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 31px;
+    height: 30px;
+}
+
+.toggle-button .bar{
+    margin: 4px 0;
+    height: 11px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px){
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+}
+
+/*home page*/
+
+/*Introduction Section*/
+
+.purple{
+    color: blueviolet;
+}
+
+#element{
+    color: blueviolet;
+}
+
+.introduction {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.3rem;
+}
+
+.introduction>div {
+    width: 40%;
+}
+
+.introduction .leftSection {
+    font-size: 3rem;
+}
+
+/*try to add blend mode in image*/
+
+.introduction .rightSection img{
+    width: 100%;
+}
+
+.download-cv{
+    width: 100px;
+    background-color: rgb(9, 9, 78);
+    color: white;
+    border: 1px solid white;
+    padding: 10px 5px;
+    margin: 10px 0 0 300px;
+}
+
+.download-cv:hover{
+    cursor: pointer;
+    color: rgb(9, 9, 78);
+    background-color: white;
+}
+
+main hr{
+    border: 0;
+    background-color: rgb(153, 153, 226);
+    height: 1.2px;
+    margin: 40px 4rem;
+}
+
+@media only screen and (max-width: 800px){
+    .introduction .rightSection{
+        display: none;
+    }
+}
+
+/*Education Section*/
+
+.education {
+    width: 80vw;
+    margin: auto;
+}
+
+.education h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.education .post-graduation, .graduation{
+    border: 1px solid white;
+    margin: 20px 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+/*skills section*/
+
+.skills{
+    width: 80vw;
+    margin: auto;
+}
+
+.skills h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.skills .wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.skills .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .content img{
+    width: 150px;
+}
+
+@media only screen and (max-width: 400px){
+    .skills .wrapper{display: block;
+    }
+}
+
+/*Projects* Section*/
+
+.projects{
+    width: 80vw;
+    margin: auto;
+}
+
+.projects h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.projects .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.projects .container div{
+    border: 1px solid white;
+    font-size: 1.5rem;
+    width: 200px;
+    height: 180px;
+    margin: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 400px){
+    .projects .container{
+        display: block;
+    }
+}
+
+/*Contact Section*/
+
+.contact{
+    width: 80vw;
+    margin: auto; 
+}
+
+.contact h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contact .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact .contact-box{
+    width: 200px;
+    height: 150px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contact-box:hover{
+    cursor: pointer;
+}
+
+.contact .contact-box i{
+    color: white;
+}
+
+.contact .contact-box a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact .contact-box .fa{
+    font-size: 4.5rem;
+}
+
+@media only screen and (max-width: 400px){
+    .contact .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*Cusom Query*/
+
+.contact .custom-query div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+}
+
+.contact .custom-query label{
+    font-size: 1.4rem;
+}
+
+.contact .custom-query #submit{
+    padding: 0.7rem;
+    font-size: 1.2rem;
+}
+
+
+.contact .custom-query #submit:hover{
+    cursor: pointer;
+}
+
+::placeholder{
+    font-size: .8rem;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+/*Footer Section*/
+
+footer{
+    margin-top: 1rem;
+    width: 100%;
+    height: 10rem;
+    background-color: rgb(9, 9, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span{
+    font-size: .9rem;
+}
+
+footer span a{
+    color: blue;
+    text-decoration: none;
+}
+    </style>
+
+    <!-- JS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="brand-title">Pulkit's Portfolio</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="../Pulkit_Resume_written.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="introduction">
+            <div class="leftSection">Hi, My name is <span class="purple">Pulkit</span>
+                <div>and I am a
+                    <span id="element"></span>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="../images/dev.gif" alt="image">
+            </div>
+        </section>
+
+        <a href="../Pulkit_Resume_written.pdf" target="_blank"><button class="download-cv">Download CV</button></a>
+
+        <hr>
+
+        <section class="education" id="education">
+
+            <h1>Education</h1>
+
+            <div class="post-graduation">
+                <div class="university">
+                    Panjab University
+                </div>
+                <div class="marks">
+                    75%
+                </div>
+            </div>
+            <div class="graduation">
+                <div class="university">I.K. Gujral Punjab Technical University</div>
+                <div class="marks">8.5 CGPA</div>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="skills" id="skills">
+            <h1>Skills</h1>
+
+            <div class="wrapper">
+                <div class="content">
+                    <img src="./images/html.png"></img>
+                    <h2>HTML</h2>
+                </div>
+
+                <div class="content">
+                    <img src="./images/css.png"></img>
+                    <h2>CSS</h2>
+                </div>
+
+                <div class="content">
+                    <img src="./images/js.png"></img>
+                    <h2>Javascript</h2>
+                </div>
+
+                <div class="content">
+                    <img src="./images/react.png"></img>
+                    <h2>React JS</h2>
+                </div>
+
+                <div class="content">
+                    <img src="./images/node.png"></img>
+                    <h2>Node JS</h2>
+                </div>
+
+                <div class="content">
+                    <img src="./images/c++.png"></img>
+                    <h2>C++</h2>
+                </div>
+
+                <div class="content">
+                    <img src="./images/mysql.png"></img>
+                    <h2>MySQL</h2>
+                </div>
+
+                <div class="content">
+                    <img src="./images/java.png"></img>
+                    <h2>Java</h2>
+                </div>
+
+                <div class="content">
+                    <img src="./images/mongo.png"></img>
+                    <h2>Mongo DB</h2>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="projects" id="projects">
+            <h1>Projects</h1> 
+            <div class="container">
+                <div class="project blog-blaze">Blog Blaze</div>
+                <div class="project quote-generator">Random Quote Generator</div>
+                <div class="project tic-tac-toe">Tic-Tac-Toe</div>
+                <div class="project stack-13">Stack 13</div>
+                <div class="project dijkstra-algorithm-visualizer">Dijkstra Algorithm Visulaizer</div>
+                <div class="project stack-13">Chelsea Website</div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="contact" id="contact">
+            <h1>Contact</h1>
+            <div class="container">
+                <div class="contact-box email">
+                    <a href="mailto:pulkitorg49@gmail.com">
+                        <i class="logo fa fa-envelope"></i>
+                    </a>
+                    <div class="text">Email</div>
+                </div>
+
+                <div class="contact-box linkedin">
+                    <a href="https://www.linkedin.com/in/pulkitkumar49/" target="_blank">
+                        <i class="logo fa fa-linkedin-square"></i>
+                    </a>
+                    <div class="text">Linkedin</div>
+                </div>
+
+                <div class="contact-box twitter">
+                    <a href="https://twitter.com/PulkitKumar49" target="_blank">
+                        <i class="logo fa fa-twitter"></i>
+                    </a>
+                    <div class="text">X</div>
+                </div>
+
+                <div class="contact-box github">
+                    <a href="https://github.com/pulkitsappal" target="_blank">
+                        <i class="logo fa fa-github"></i>
+                    </a>
+                    <div class="text">Github</div>
+                </div>
+
+            </div>
+
+            <h2>Custom Query :</h2>
+            <div class="custom-query">
+                <form target="_blank" action="https://formsubmit.co/pulkitsupple2001@gmail.com" method="POST"
+                    onsubmit="sendEmail">
+                    <div>
+                        <label for="sender-name">Your Name:</label>
+                        <input type="text" name="sender-name" id="sender-name" placeholder="Your Name...">
+                    </div>
+                    <div>
+                        <label for="sender-email">Your Email:</label>
+                        <input type="email" name="sender-email" id="sender-email" placeholder="Your Email...">
+                    </div>
+                    <div>
+                        <label for="sender-message">Your Message:</label>
+                        <textarea rows="10" cols="40" name="sender-message" id="sender-message"
+                            placeholder="Your Message..."></textarea>
+                    </div>
+                    <button id="submit">SUBMIT</button>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <span>This 100% custom website is open source. You can find the <a href="#">code</a> on GitHub</span>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
+
+    <!-- Setup and start animation! -->
+ <script>
+    var typed = new Typed('#element', {
+      strings: ['Full Stack Web Developer', 'Software Developer', 'Competitive Programmer', 'Magician', 'Music Producer'],
+      typeSpeed: 50,
+    });
+  </script> 
+</body>
+
+</script>
+<script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })
+
+</script>
+
+</html>
